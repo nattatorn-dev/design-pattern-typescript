@@ -1,7 +1,7 @@
-export type LatLng = [number, number];
+export type Coordinates = { latitude: number; longitude: number };
 
 export interface ITransportationStrategy {
-  goto(from: LatLng, to: LatLng): void;
+  goto(from: Coordinates, to: Coordinates): void;
 }
 
 export class Transportation {
@@ -11,25 +11,25 @@ export class Transportation {
     this.strategy = strategy;
   }
 
-  public goto(from: LatLng, to: LatLng): void {
+  public goto(from: Coordinates, to: Coordinates): void {
     this.strategy.goto(from, to);
   }
 }
 
 export class PersonalCar implements ITransportationStrategy {
-  public goto(from: LatLng, to: LatLng): void {
+  public goto(from: Coordinates, to: Coordinates): void {
     console.log(`PersonalCar: ${from} ${to}`);
   }
 }
 
 export class TaxiCab implements ITransportationStrategy {
-  public goto(from: LatLng, to: LatLng): void {
+  public goto(from: Coordinates, to: Coordinates): void {
     console.log(`TaxiCab: ${from} ${to}`);
   }
 }
 
 export class CityBus implements ITransportationStrategy {
-  public goto(from: LatLng, to: LatLng): void {
+  public goto(from: Coordinates, to: Coordinates): void {
     console.log(`CityBus: ${from} ${to}`);
   }
 }
