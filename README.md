@@ -5,7 +5,6 @@
 
 # useful design pattern
 
-
 [ts-badge]: https://img.shields.io/badge/TypeScript-4.2-blue.svg
 [typescript-4-2]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-2.html
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2014.16-blue.svg
