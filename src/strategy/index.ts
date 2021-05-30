@@ -3,7 +3,7 @@ import {
   Coordinates,
   TaxiCab,
   Transportation,
-} from './transportation';
+} from "./transportation";
 
 const from: Coordinates = {
   latitude: 13.1,

@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
@@ -15,17 +14,12 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "typeRoots": [
-      "src/@types",
-      "node_modules/@types"
-    ]
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false
   },
   "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "**/__template__/**/*.ts"
-  ],
+    "src/**/*",
+    "__tests__/**/*"
+  ]
 }
